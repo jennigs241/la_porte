@@ -1,7 +1,5 @@
 /**
- * Vérifie si le format de l'adresse e-mail est valide.
- * @param email - L'adresse e-mail à vérifier.
- * @returns boolean - true si le format est valide, false sinon.
+ * Valide le format de l'adresse e-mail avec une expression régulière.
  */
 export function validerEmail(email: string): boolean {
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -9,18 +7,14 @@ export function validerEmail(email: string): boolean {
 }
 
 /**
- * Vérifie si le mot de passe contient au moins 8 caractères.
- * @param motDePasse - Le mot de passe à vérifier.
- * @returns boolean - true s'il a au moins 8 caractères, false sinon.
+ * Valide si le mot de passe contient au moins 8 caractères.
  */
 export function validerMotDePasse(motDePasse: string): boolean {
     return motDePasse.length >= 8;
 }
 
 /**
- * Affiche un message d'erreur en lui ajoutant la classe 'message-visible'.
- * @param messageElement - L'élément HTML <div class="message"></div>.
- * @param texteErreur - Le texte de l'erreur à afficher.
+ * Affiche le message d'erreur et ajoute la classe 'message-visible'.
  */
 export function afficherErreur(messageElement: HTMLElement, texteErreur: string): void {
     messageElement.textContent = texteErreur;
@@ -28,8 +22,7 @@ export function afficherErreur(messageElement: HTMLElement, texteErreur: string)
 }
 
 /**
- * Masque le message d'erreur en supprimant la classe 'message-visible'.
- * @param messageElement - L'élément HTML <div class="message"></div>.
+ * Masque le message d'erreur et retire la classe 'message-visible'.
  */
 export function masquerErreur(messageElement: HTMLElement): void {
     messageElement.textContent = '';
