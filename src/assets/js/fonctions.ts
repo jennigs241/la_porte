@@ -1,5 +1,5 @@
 /**
- * Valide le format d'une adresse e-mail.
+ * Vérifie si le format de l'adresse e-mail est valide.
  * @param email - L'adresse e-mail à vérifier.
  * @returns boolean - true si le format est valide, false sinon.
  */
@@ -9,17 +9,17 @@ export function validerEmail(email: string): boolean {
 }
 
 /**
- * Valide la longueur du mot de passe.
+ * Vérifie si le mot de passe contient au moins 8 caractères.
  * @param motDePasse - Le mot de passe à vérifier.
- * @returns boolean - true si au moins 8 caractères, false sinon.
+ * @returns boolean - true s'il a au moins 8 caractères, false sinon.
  */
 export function validerMotDePasse(motDePasse: string): boolean {
     return motDePasse.length >= 8;
 }
 
 /**
- * Affiche un message d'erreur dans l'élément HTML prévu à cet effet.
- * @param messageElement - L'élément HTML div.message.
+ * Affiche un message d'erreur en lui ajoutant la classe 'message-visible'.
+ * @param messageElement - L'élément HTML <div class="message"></div>.
  * @param texteErreur - Le texte de l'erreur à afficher.
  */
 export function afficherErreur(messageElement: HTMLElement, texteErreur: string): void {
@@ -28,8 +28,8 @@ export function afficherErreur(messageElement: HTMLElement, texteErreur: string)
 }
 
 /**
- * Masque le message d'erreur.
- * @param messageElement - L'élément HTML div.message.
+ * Masque le message d'erreur en supprimant la classe 'message-visible'.
+ * @param messageElement - L'élément HTML <div class="message"></div>.
  */
 export function masquerErreur(messageElement: HTMLElement): void {
     messageElement.textContent = '';
