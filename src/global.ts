@@ -55,4 +55,4 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initialiserFormulaire);
 } else {
     initialiserFormulaire();
-}
+} 
