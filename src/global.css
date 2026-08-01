@@ -1,10 +1,36 @@
-@import url('./assets/css/util.css');
-@import url('./assets/css/main.css');
-@import url('./assets/css/style.css');
+@import './assets/css/util.css';
+@import './assets/css/main.css';
+@import './assets/css/style.css';
 
-* {
+@font-face {
+  font-family: 'Poppins';
+  src: url('/la_porte/assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/la_porte/assets/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/la_porte/assets/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
 }
